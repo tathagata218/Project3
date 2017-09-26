@@ -4,7 +4,7 @@ module.exports = function(app){
     app.post("/data",function(req,res){
         console.log(req.body);
 
-        db.Test.create({
+        db.users.create({
             userName : req.body.userName,
             stockData : req.body.userTicker
         }).then(function(outData){
