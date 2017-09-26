@@ -1,0 +1,13 @@
+.jumbotron{
+    background-image: url("../images/stocks.jpeg");
+    /* background-size: auto; */
+    color: white;
+}
+
+body {
+    background-color: #102c59;
+}
+
+h3 {
+    color: white;
+}

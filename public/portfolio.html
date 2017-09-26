@@ -21,41 +21,11 @@
 	<div class="container-fluid">
 		<div class="jumbotron text-center">
 			<h1>Stock Simulator</h1>
-			<h3>The Current Market</h3>
+			<h3>Your Portfolio</h3>
 		</div>
 	</div>
 
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-md-3">
-			<!-- <div class="container"> -->
-			<div class="panel-group">
-				<div class="panel panel-primary">
-					<div class="panel-heading">Find Stock</div>
-					<form>
-						<div class="container-fluid">
-							<div class="form-group">
-								<label for="stock-name">Stock name</label>
-								<input type="text" class="form-control" id="stock-name" placeholder="Apple Inc.">
-							</div>
-							<button class="btn btn-primary" id="search-stock" type="submit">Search</button>
-							<!-- <div class="form-group">
-								<label for="buy">Buy: (amount of shares)</label>
-								<input type="number" class="form-control" id="buy" placeholder="0" min="100">
-							</div>
-							<div class="form-group">
-								<label for="sell">Sell: (amount of shares)</label>
-								<input type="number" class="form-control" id="sell" placeholder="0">
-							</div> -->
-                            <br>
-                            <br>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-
-		<div class="col-md-9">
+		<!-- <div class="col-md-9"> -->
 			<div class="container-fluid">
 					<div class="panel panel-primary">
 						<div class="panel-heading">Current Stock Market Data
@@ -67,21 +37,56 @@
 											<tr>
                                                 <th><strong>Stock Abbr</strong></th>
 												<th><strong>Stock Name</strong></th>
-												<th><strong>Price</strong></th>
-												<th><strong>Change</strong></th>
+												<th><strong>Price at Purchase</strong></th>
+												<th><strong>Current Price</strong></th>
 												<th><strong>% Change</strong></th>
 											</tr>
 										</thead>
 										</tr> 
 									</tbody>
 								</table>
-								<button class="btn btn-primary" id="buy-stock" type="submit">Buy</button>
 							</div>
 						</div>
 					</div>
 				<!-- </div> -->
+            </div>
+            
+<div class="container-fluid">
+	<div class="row">
+		<!-- <div class="col-md-3"> -->
+		<div class="container"> 
+			<div class="panel-group">
+				<div class="panel panel-primary">
+					<div class="panel-heading">Choose Stock</div>
+					<form>
+						<div class="container-fluid">
+							<div class="form-group">
+                                <br>
+								<!-- <label for="stock-name">Stock name</label>
+                                <input type="text" class="form-control" id="stock-name" placeholder="Apple Inc."> -->
+                                <select class="form-control">
+                                    <option>Select Stock</option>
+                                </select>
+							</div>
+							<!-- <div class="form-group">
+								<label for="buy">Buy:(amount of shares)</label>
+								<input type="number" class="form-control" id="buy" placeholder="0" min="100">
+							</div> -->
+							<div class="form-group">
+								<label for="sell">Amount of Shares</label>
+                                <input type="number" class="form-control" id="sell" placeholder="0">
+                                <br>
+                                <button class="btn btn-primary" id="buy-stock" type="submit">Buy</button>
+                                <button class="btn btn-primary" id="sell-stock" type="submit">Sell</button>
+							</div>
+                            <br>
+                            <br>
+				    		</div>
+				    	</form>
+                    </div>
+                </div>
 			</div>
-		</div>
+        </div>
 	</div>
 </div>
 <script src="assets/javascript/app.js"></script>
