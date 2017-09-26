@@ -22,3 +22,7 @@ footer {
 .control-label, .form-group{
     color:white;
 }
+
+button{
+    margin-bottom: 25px;
+}
