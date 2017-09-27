@@ -1,3 +1,5 @@
+<img src = "http://oparas.com/wp-content/uploads/2017/04/Bull-bear-market.jpg">
+
 # Stock Market Simulator
 
 This app intends to recreate the thrill and disappointment of investing real stocks for real money by using the real stocks and fake money!
