@@ -33,6 +33,6 @@ Object.keys(db).forEach(modelName => {
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
-db.users.hasMany(db.stock_trans); // ASSOCIATION !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+db.users.hasMany(db.stock_trans);
 
 module.exports = db;

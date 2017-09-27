@@ -2,13 +2,13 @@
 <html>
 <head>
 	<title>Stock Simulator</title>
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
+
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/cerulean/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="public/css/style.css">
 
 	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
@@ -60,21 +60,13 @@
 					<div class="panel-heading">Choose Stock</div>
 					<form>
 						<div class="container-fluid">
+						
 							<div class="form-group">
-                                <br>
-								<!-- <label for="stock-name">Stock name</label>
-                                <input type="text" class="form-control" id="stock-name" placeholder="Apple Inc."> -->
-                                <select class="form-control">
-                                    <option>Select Stock</option>
-                                </select>
-							</div>
-							<!-- <div class="form-group">
-								<label for="buy">Buy:(amount of shares)</label>
-								<input type="number" class="form-control" id="buy" placeholder="0" min="100">
-							</div> -->
-							<div class="form-group">
-								<label for="sell">Amount of Shares</label>
-                                <input type="number" class="form-control" id="sell" placeholder="0">
+
+								<h4>Company Ticker</h4>
+								<input type="text" class="form-control" id="stockTicker" palceholder="Company Ticker"> 
+								<h4>Number of Shares to Buy</h4>
+                                <input type="text" class="form-control" id="sellVolume" placeholder="0">
                                 <br>
                                 <button class="btn btn-primary" id="buy-stock" type="submit">Buy</button>
                                 <button class="btn btn-primary" id="sell-stock" type="submit">Sell</button>
@@ -90,6 +82,6 @@
 	</div>
 </div>
 <footer> Designed and Coded by R.A.N.T <footer>
-<script src="assets/javascript/app.js"></script>
+
 </body>
 </html>

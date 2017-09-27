@@ -11,12 +11,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
-app.use(express.static("public"));
+app.use("/public", express.static("public"));
 
 require("./routes/api_routes.js")(app);
 require("./routes/html_routes.js")(app);
 
-db.sequelize.sync({force: true})
+db.sequelize.sync()
 // .then(function() {
 //     return db.users.create({
 //         userName: 'asdf', 

@@ -1,12 +1,14 @@
 var db = require("../models");
 
 module.exports = function(app){
-    app.post("/data",function(req,res){
+    app.post("/userIntData",function(req,res){
         console.log(req.body);
 
         db.users.create({
-            userName : req.body.userName,
-            stockData : req.body.userTicker
+            userName  : req.body.userName,
+            firstName : req.body.firstName,
+            lastName  : req.body.lastName,
+            password  : req.body.password 
         }).then(function(outData){
             res.json(outData);
         })
