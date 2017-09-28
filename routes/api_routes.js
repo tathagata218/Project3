@@ -14,3 +14,31 @@ module.exports = function(app){
         })
     });
 }
+
+// app.put("/api/stockBuy", function(req, res) {
+
+//     db.stocktrans.update({
+//       numOfShares: req.body.numOfShares,
+//       companyName: req.body.companyName
+//     }, {
+//       where: {
+//         id: req.body.id
+//       }
+//     }).then(function(dbstocktrans) {
+//       res.json(dbstocktrans);
+//     });
+//   });
+
+//   app.put("/api/stockSell", function(req, res) {
+    
+//         db.stocktrans.update({
+//           numOfShares: req.body.numOfShares,
+//           companyName: req.body.companyName
+//         }, {
+//           where: {
+//             id: req.body.id
+//           }
+//         }).then(function(dbstocktrans) {
+//           res.json(dbstocktrans);
+//         });
+//       });
